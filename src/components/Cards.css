@@ -1,7 +1,13 @@
 .cards-container {
-  max-width: 1400px;
-  margin: auto;
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 250px);
-  gap: 5px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.sub-heading {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
