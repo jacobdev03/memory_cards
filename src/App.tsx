@@ -1,14 +1,14 @@
-import { useState } from 'react';
 import './App.css';
+import Cards from './components/Cards';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <p>Hi</p>
-      {count}
-      <button onClick={() => setCount(count + 1)}></button>
+      <div className="heading">
+        <h1>Memory game</h1>
+        <p>Memorize as many cats you can</p>
+      </div>
+      <Cards />
     </>
   );
 }
